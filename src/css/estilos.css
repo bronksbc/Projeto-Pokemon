@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,200;1,400&display=swap');
+
+body{
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(241, 223, 250);
+    color: #333333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo, 
+header .imagem-botao{
+   width: 30px; 
+   transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+}
+
+header .logo:hover, 
+header .imagem-botao:hover,
+main .cartao-pokemon:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .listagem-pokemon{
+    display: flex;
+}
+
+main .cartao-pokemon{
+    background-color: white;
+    width: 200px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+
+main .cartao-pokemon:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.modo-escuro {
+    background-color: #131313;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333 ;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif{
+    width: 90px;
+    height: 90px;
+    background-color: white;
+}
+
+.tipos {
+    display: flex;
+    gap: 5px;
+}
+
+.tipo-grama{
+    background-color: green;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+.tipo-veneno{
+    background-color: violet;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+.tipo-agua{
+    background-color: blue;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+.tipo-Fogo{
+    background-color: orangered;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+.tipo-inseto{
+    background-color: green;
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
